@@ -1,0 +1,28 @@
+{
+  "name": "shopping-list-electron",
+  "version": "1.0.0",
+  "description": "Shopping list dekstop app.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "package-mac": "electron-packager . --overwrite --platform=darwin --arch=x64 --icon=assets/icons/mac/icon.icns --prune=true --out=release-builds",
+    "package-win": "electron-packager . electron-tutorial-app --overwrite --asar=true --platform=win32 --arch=ia32 --icon=assets/icons/win/Iconshock-Real-Vista-Business-Shopping-cart.ico --prune=true --out=release-builds --version-string.CompanyName=CE --version-string.FileDescription=CE --version-string.ProductName=\"ShoppingList\"",
+    "package-linux": "electron-packager . electron-tutorial-app --overwrite --asar=true --platform=linux --arch=x64 --icon=assets/icons/png/Iconshock-Real-Vista-Business-Shopping-cart.png --prune=true --out=release-builds"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/polmayur01/shopping-list-electron.git"
+  },
+  "author": "Mayur Pol",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/polmayur01/shopping-list-electron/issues"
+  },
+  "homepage": "https://github.com/polmayur01/shopping-list-electron#readme",
+  "dependencies": {
+    "electron": "^38.1.2"
+  },
+  "devDependencies": {
+    "electron-packager": "^17.1.2"
+  }
+}
