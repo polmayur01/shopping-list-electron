@@ -1,0 +1,20 @@
+# dependencies & caches
+node_modules/
+npm-debug.log*
+yarn.lock
+pnpm-lock.yaml
+
+# electron builds / artifacts
+release-builds/
+dist/
+out/
+build/
+*.exe
+*.dmg
+*.AppImage
+*.zip
+*.rar
+*.7z
+
+# misc
+.DS_Store
